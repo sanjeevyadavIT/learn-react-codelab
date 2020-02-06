@@ -1,0 +1,20 @@
+<body>
+    <div id='root'></div>
+
+    <!-- 💣 Step 1: remove this line
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    💣 remove this line -->
+    
+    <script type='text/javascript'>
+        const rootElement = document.getElementById('root')
+
+        // 🐨 Step 2: Replace document.createElement by React.createElement
+        const element = document.createElement('h1')
+        element.textContent = 'React Codelab'
+        element.className = 'container'
+
+        // 🐨 Step 3: Render React element using ReactDOM.render
+        rootElement.appendChild(element)
+    </script>
+</body>

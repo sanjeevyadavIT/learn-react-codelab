@@ -1,0 +1,25 @@
+<body>
+    <div id='root'></div>
+
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <!-- 💣 Step 1:  remove this line
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    💣 remove this line -->
+    
+    <script type='text/javascript'>
+        // 🐨 Step 2: on the script tag above, change `type="text/javascript"`
+        // to `type="text/babel"` so babel will compile this code for the browser to run.
+
+        const rootElement = document.getElementById('root')
+
+        // 🐨 Step 3: re-implement this using JSX!
+        const element = React.createElement('h1', {
+            className: 'container',
+            children: 'React Codelab'
+        })
+
+        // 🐨 Step 3: Render React element using ReactDOM.render
+        ReactDOM.render(element, rootElement)
+    </script>
+</body>
