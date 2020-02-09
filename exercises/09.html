@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+        function Post({item}) {
+            return (
+                <li className="list-group-item">
+                    <h5 className="mb-1">{item.title}</h5>
+                    <p className="mb-1">{item.body}</p>
+                </li>
+            )
+        }
+
+        function App() {
+            const [data, setData] = React.useState([])
+    
+            // 🐨 Step 1: Use fetch to make an API request to url `https://jsonplaceholder.typicode.com/posts`
+            // in useEffect hook and set the response to the state
+    
+            return (
+            <div className="container">
+                <ul className="list-group">
+                    {data.map(item => <Post item={item} />)}
+                </ul>
+            </div>
+            )
+        }
+    
+        ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+</body>

@@ -1,0 +1,35 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+        function Sum() {
+            // 🐨 Step 1: add some state (with React.useState)
+
+            // 🐨 Step 2: create a `handleChange` function that accepts the change `event` and
+            // uses `event.target.value` to get the value of the input
+            // 💰 remember this event will be triggered on the input, not the form
+
+            const sum = (a, b) => parseInt(a) + parseInt(b)
+
+            return (
+            <div>
+                <input
+                    type="number"
+                    id="firstInput"
+                    // 🐨 Step 3: add your onChange handler here
+                    />
+                <input
+                    type="number"
+                    id="secondInput"
+                    // 🐨 Step 4: add your onChange handler here
+                    />
+                {/* 🐨 Step 5: call sum method with input values */}
+            </div>
+            )
+        }
+    
+        ReactDOM.render(<Sum />, document.getElementById('root'))
+    </script>
+</body>

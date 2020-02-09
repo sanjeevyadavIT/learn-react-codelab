@@ -1,0 +1,33 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+        function Sum() {
+            const [firstInput, setFirstInput] = React.useState(0)
+            const [secondInput, setSecondInput] = React.useState(0)
+
+            const handleFirstInputChange = event => setFirstInput(event.target.value)
+            const handleSecondInputChange = event => setSecondInput(event.target.value)
+
+            const sum = (a, b) => parseInt(a) + parseInt(b)
+            
+            return (
+            <div>
+                <input
+                    type="number"
+                    id="firstInput"
+                    onChange={handleFirstInputChange} />
+                <input
+                    type="number"
+                    id="secondInput"
+                    onChange={handleSecondInputChange}/>
+                = {sum(firstInput, secondInput)}
+            </div>
+            )
+        }
+    
+        ReactDOM.render(<Sum />, document.getElementById('root'))
+    </script>
+</body>

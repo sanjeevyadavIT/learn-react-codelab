@@ -1,0 +1,32 @@
+<body>
+    <div id='root'></div>
+
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    
+    <script type='text/babel'>
+        // function component
+        function Message(props){
+            return <h1>{props.title}</h1>
+        }
+
+        // class component
+        class Heading extends React.Component {
+            render() {
+                return <h1>{this.props.title}</h1>
+            }
+        }
+
+        function App() {
+            return (
+                <div>
+                    <Message title="Hello I'm a functional component" />
+                    <Heading title="Hello, I'm a class component" />
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+</body>

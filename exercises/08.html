@@ -1,0 +1,31 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+  
+        function App() {
+            // 🐨 Step 1: add some state (with React.useState)
+
+            // 🐨 Step 2: Add onSubmit function to take value from input
+            // and update state.
+            // don't forget to use `event.preventDefault()` to avoid default behaviour
+            // use `event.target.elements[0].value` to get value from input
+    
+            return (
+                <div>
+                    <form onSubmit={handleOnSubmit}>
+                        <input type="text"/>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <ul style={{listStyle: 'none', paddingLeft: 0}}>
+                    {/* 🐨 Step 3: render todo list*/}
+                    </ul>
+                </div>
+            )
+        }
+    
+        ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+</body>
