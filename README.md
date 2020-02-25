@@ -13,6 +13,11 @@ The repo contains three folders, `codelab`, `exercise` and `exercise-final`.
 
 **exercise-final** folder contains the solution of the exericse
 
+## Requirements
+
+- HTML, CSS & Javascript
+- Basic knowledge of [es6](https://github.com/lukehoban/es6features)
+
 ## 📲 Getting Started
 
 1. Clone this repo
