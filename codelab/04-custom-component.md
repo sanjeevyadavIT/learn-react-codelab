@@ -34,3 +34,5 @@ components.
 ### Reference
 
 [React docs: Components & props](https://reactjs.org/docs/components-and-props.html)
+
+[⬅️](03-jsx.md)  [🏠](../README.md)  [➡️](05-styling.md)

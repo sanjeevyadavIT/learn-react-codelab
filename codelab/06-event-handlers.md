@@ -27,3 +27,8 @@ Print the value from input element in console
 There are several ways to get the value of the name input:
 - Via their index: `event.target.elements[0]`
 - Via the elements object by their name or id attribute: `event.target.elements.usernameInput.value`
+
+### Reference
+[Kent C. Dodds](https://github.com/kentcdodds)
+
+[⬅️](05-styling.md)  [🏠](../README.md)  [➡️](07-useState.md)

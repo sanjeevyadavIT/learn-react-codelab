@@ -55,3 +55,5 @@ the styles applied match the text content.
 
 ### Reference
 [Kent C. Dodds](https://github.com/kentcdodds)
+
+[⬅️](04-custom-component.md)  [🏠](../README.md)  [➡️](06-event-handlers.md)

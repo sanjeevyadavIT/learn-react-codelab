@@ -24,3 +24,5 @@ In this exercise, we're going to accept two number and display their sum
 ### Reference
 [Kent C. Dodds](https://github.com/kentcdodds)
 📜 https://reactjs.org/docs/hooks-state.html
+
+[⬅️](06-event-handlers.md)  [🏠](../README.md)  [➡️](08-rendering-arrays.md)
